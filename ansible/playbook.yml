@@ -7,7 +7,7 @@
 
     - name: Copy WAR file to Tomcat
       copy:
-        src: "/var/snap/jenkins/5013/workspace/MavenAnsibleWebApp1-CICD/target/MavenAnsibleWebApp1.war"
+        src: "/var/snap/jenkins/5013/workspace/MavenAnsibleWebApp/target/MavenAnsibleWebApp1.war"
         dest: "/opt/tomcat/webapps/MavenAnsibleWebApp1.war"
 
     - name: Stop Tomcat
@@ -15,3 +15,4 @@
 
     - name: Start Tomcat
       shell: /opt/tomcat/bin/startup.sh
+    
